@@ -5,147 +5,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Slow Brew</title>
-  <style>
-    body{
-      background-color: #F5E6D3;
-      padding: 15px 20px 20px 20px;
-      font-family: Robot, Arial;
-    }
-    .container {
-      background-color: #3a2618;
-      color: #F5E6D3;
-      height: 900px;
-      border-radius: 10px;
-      padding: 15px 30px 30px 30px;
-    }
-    .header{
-      display: flex;
-      margin-bottom: 20px;
-      background-color: #F5E6D3;
-      border-radius: 5px;
-      justify-content: space-between;
-      color: #3a2618;
-      align-items: center;
-    }
-    .left-section {
-      display: flex;
-      margin-left: 15px;
-      align-items: center;
-    }
-    .right-section {
-      margin-right: 15px;
-    }
-    .slow-brew-logo {
-      height: 40px;
-      border-radius: 20px;
-      margin-right: 5px;
-    }
-    .brand-name {
-      font-family: Robot, Arial;
-      font-weight: bold;
-    }
-    .login-btn,.form-button {
-      border: none;
-      background-color: #f3b25d;
-      color: #3a2618;
-      padding: 8px 15px;
-      font-family: Roboto, Arial;
-      font-weight: bold;
-      font-size: 12px;
-      border-radius: 18px;
-    }
-    .hero-section {
-      background-image: url("Pictures/coffee\ 4.jpg");
-      background-attachment: fixed;
-      background-repeat: no-repeat;
-      text-align: center;
-      border-radius: 5px;
-      padding: 15px;
-    }
-    .product-highlight {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      background-color:  #F5E6D3;
-      border-radius: 5px;
-      padding: 15px 10px 15px 18px;
-    }
-    .product-container {
-      display: flex;
-      flex-direction: column;
-      width: 160px;
-      column-gap: 15px;
-      border: solid 1px;
-      border-radius: 10px;
-      background-color: #3a2618;
-      box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
-    }
-    .drink-image {
-      height: 160px;
-      border-top-right-radius: 5px;
-      object-position: center;
-      object-fit: fill;
-      border-top-left-radius: 5px;
-      margin-bottom: 5px;
-    }
-    .drink-name {
-      font-size: 15px;
-      color: #f3b25d;
-      margin-left: 10px;
-      margin-top: 0px;
-      margin-bottom: 2px;
-      margin-right: 10px;
-    }
-    .description {
-      margin-top: 0px;
-      color: #F5E6D3;
-      font-size: 12px;
-      width: 140px;
-      font-weight: bold;
-      margin-left: 10px;
-      vertical-align: top;
-      margin-top: 0px;
-    }
-    .find-us {
-      margin-bottom: 10px;
-    }
-
-    .Address, .work-time,.call-icon {
-      margin-left: 40px;
-      margin-top: 0px;
-      margin-bottom: 7px;
-    }
-    .work-time {
-      margin-bottom: 50px;
-    }
-    .footer {
-      height: 40px;
-      display: flex;
-      align-items: center;
-      background-color:#F5E6D3;
-      border-radius: 5px;
-    }
-    .contact-icon {
-      height: 30px;
-      margin-top: 2px;
-      border-radius: 25px;
-      margin-right: 6px;
-      background-color: transparent;
-    }
-    .phone-icon {
-      margin-left: 15px;
-      background-color: transparent;
-    }
-    .telegram-icon {
-      object-position: right;
-    }
-    .conctact-link,.call-us {
-      color: #3a2618;
-      text-decoration-line: underline;
-      font-weight: bold;
-    }
-  </style>
+  
+  <link rel="stylesheet" href="styles/style.css">
 </head>
-<body>
+<body id="Home">
   <div class="container">
     <header class="header">
       <div class="left-section">
@@ -155,6 +18,11 @@
       </p>
       </div>
       <div class="right-section">
+        <nav class="navigations">
+          <a href="#Home" class="nav">Home</a>
+          <a href="#Products" class="nav">Products</a>
+          <a href="#Contacts" class="nav">Contact Us</a>
+        </nav>
         <button class="login-btn">
           Login
         </button>
@@ -163,70 +31,154 @@
     <main>
       <section>
         <div class="hero-section">
-        <h1>
-          Slow Down. Sip Better
-        </h1>
-        <p>
-          "In a world that never stops, we believe in the art of taking a break. At Slow Brew, every cup is made with patience and intention, using beans sourced from farms that priotize quality over quantity.We've created a minimalist space where you can unplug, take a deep breath, and rediscover the simple pleasure of a perfectly brewed cup of coffee"
-        </p>
-        <button class="form-button">
-          Get Started &rarr;
-        </button>
+          <h1 class="hero">
+            Slow Down. Sip Better
+          </h1>
+          <p class="brand-description">
+            "In a world that never stops, we believe in the art of taking a break. At Slow Brew, every cup is made with patience and intention, using beans sourced from farms that priotize quality over quantity.We've created a minimalist space where you can unplug, take a deep breath, and rediscover the simple pleasure of a perfectly brewed cup of coffee"
+          </p>
+          <button class="form-button">
+            Get Started &rarr;
+          </button>
         </div>
-        <h1>
+        <h1 id="Products">
           Featured Drinks
         </h1>
-        <div class="product-highlight">
-          <div class="product-container">
-            <img src="Pictures/Honey latte 1.jpg" class="drink-image">
-            <h2 class="drink-name">
-              Honey Lavender Latte
-            </h2>
-            <p class="description">
-              Espresso with steamed milk, lavender syrup, and a touch of local honey
-            </p>
+        <div class="product-category-container">
+          <div>
+            <h3 class="product-category">
+              Coffee Drinks
+            </h3>
+            <div class="product-highlight coffee-products-highlight">
+              <div class="product-container">
+                <img src="Pictures/Honey latte 1.jpg" class="drink-image coffee-drink-image">
+                <h2 class="drink-name">
+                  Honey Lavender Latte
+                </h2>
+                <p class="description">
+                  Espresso with steamed milk, lavender syrup, and a touch of local honey
+                </p>
+              </div>
+              <div class="product-container">
+                <img src="Pictures/Smokes Butterscotch Latte.jpg" class="drink-image coffee-drink-image">
+                <h2 class="drink-name">
+                  Smoked Butterscotch Latte
+                </h2>
+                <p class="description">
+                  House-made butterscotch with a hint of smoked sea salt
+                </p>
+              </div>
+              <div class="product-container">
+                <img src="Pictures/spiced vanilla.jpg" class="drink-image coffee-drink-image">
+                <h2 class="drink-name">
+                  Slow Brew Cold Brew
+                </h2>
+                <p class="description">
+                  16-hour slow-steeped cold brew, served black or with your choice milk
+                </p>
+              </div>
+            </div>
           </div>
-          <div class="product-container">
-            <img src="Pictures/Smokes Butterscotch Latte.jpg" class="drink-image">
-            <h2 class="drink-name">
-              Smoked Butterscotch Latte
-            </h2>
-            <p class="description">
-              House-made butterscotch with a hint of smoked sea salt
-            </p>
-          </div>
-          <div class="product-container">
-            <img src="Pictures/spiced vanilla.jpg" class="drink-image">
-            <h2 class="drink-name">
-              Slow Brew Cold Brew
-            </h2>
-            <p class="description">
-              Espresso with steamed milk, lavender syrup, and a touch of local honey
-            </p>
+          <div>
+            <h3 class="product-category">
+              Non-Coffee Drinks
+            </h3>
+            <div class="product-highlight non-coffee-products-highlight">
+              <div class="product-container non-coffee-product-container">
+                  <img src="Pictures/chai 1.jpg" class="drink-image">
+                  <h2 class="drink-name">
+                    Dirty Chai
+                  </h2>
+                  <p class="description">
+                    Spiced chai concentrate with a shot of espresso
+                  </p>
+              </div>
+              <div class="product-container non-coffee-product-container">
+                <img src="Pictures/Vanilla Matcha latte.jpg" class="drink-image">
+                <h2 class="drink-name">
+                  Matcha Latte
+                </h2>
+                <p class="description">
+                  Ceremonial grade matcha whisked to perfection with steamed milk
+                </p>       
+              </div>
+              <div class="product-container non-coffee-product-container">
+                <img src="Pictures/H.jpg" class="drink-image">
+                <h2 class="drink-name">
+                  Tumeric Golden Milk
+                </h2>
+                <p class="description">
+                  Warm tumeric, ginger, and cinnamon blended with your choice of milk
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
-      <section class="Location">
-        <h2 class="find-us">
-          &#128205; Find Your Quiet Spot &#127978;
-        </h2>
+      <article>
+        <div class="feedbacks-container js-feedbacks-container">
+          <div  class="customer-feedbacks js-customer-feedbacks"> 
+            <div class="customer-profile">
+              <div class="feedback-left-section">
+                <div class="profile-pics-container">
+                  <img src="Pictures/profile pics/profile 1.jpeg" class="profile-pics">
+                </div>
+                <div class="info-and-feedback-container">
+                  <h4 class="customer-name">
+                    Sarah Chen
+                  </h4>
+                  <p class="feedback">
+                    "Quiet, cozy, and the wifi is actually reliable.Found my new work-from-home-away-from-home."
+                  </p>
+                </div>
+              </div>
+              <div class="feedback-right-section">
+                <img src="ratings/rating-45.png" class="customer-rating">
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+    </main>
+    <footer class="footer" id="Contacts">
+      <div class="footer-column location-column">
+        <h4 class="column-header">
+          &#128205; Visit Us 
+        </h4>
         <p class="Address">
           123 Main Street &#9679; Cityville Corner of 2nd Ave & Pine Street &#9679; Parking Available
         </p>
         <p class="work-time">
-          Open Daily &#9679; 7am - 7pm &#9200;
+          Monday &#8208; Friday: 7am &#8208; 7pm
+          <br>
+          Saturday: 8am &#8208; 8pm
+          <br>
+          Saturday: 8am &#8208; 4pm
         </p>
-      </section>
-    </main>
-    <footer class="footer">
-      <img src="Icons/Mobile.JPG" class="contact-icon phone-icon">
-      <a href="tel:+2348131803612" class="contact-link phone-link">
-        <p class="call-us">Call us</p>
-      </a>
-      <img src="Icons/IG.JPG" class="contact-icon twitter-icon">
-      <img src="Icons/Telegram.JPG" class="contact-icon telegram-icon">
-      <img src="Icons/whatsapp.JPG" class="contact-icon whatsapp-icon">
+      </div>
+      <div class="footer-column contact-column">
+        <h4 class="column-header">
+          &#128222; Contact Us
+        </h4>
+        <div>
+          <img src="Icons/whatsapp.JPG" class="contact-icon whatsapp-icon"> <p class="whatsapp-contact"> 08131803612 </p>
+        </div>
+        <div>
+          <img src="Icons/email.JPG" class="contact-icon email-icon">
+          <a href="mailto:bolajiabdulmuiz@gmail.com" class="email-contact">
+            slowb@gmail.com
+          </a>
+        </div>
+        <div>
+          <img src="Icons/IG.JPG" class="contact-icon ingram-icon">
+          <p class="ingram-contact">
+            @Slowbrew
+          </p>
+        </div>
+      </div>
+      <h6 class="copyright">© All Rights Reserved Slow Brew 2026</h6>
     </footer>
   </div>
+  <script src="feedback.js"></script>
 </body>
 </html>

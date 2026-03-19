@@ -621,16 +621,20 @@
       }
       .product-container {
         display: flex;
+        flex: 1;
         width: 110px;
         flex-direction: column;
         border-radius: 5px;
         background-color: #3a2618;
         box-shadow: -1px -2px 2px rgb(245, 230, 211, 0.4);
       }
+      .product-image-container {
+        flex: 1;
+        object-fit: fill;
+      }
       .drink-image {
         border-top-right-radius: 5px;
-        object-position: center;
-        object-fit: cover;
+        width: 100%;
         height: 150px;
         border-top-left-radius: 5px;
         margin-bottom: 5px;
@@ -751,6 +755,7 @@
       }
       
     }
+
 
 @media  (min-width: 1200px) {
       body{
@@ -1005,4 +1010,281 @@
       font-size: 14px;
     }
     }
-    
+    @media  (max-width: 375px) {
+      html,body {
+        scroll-behavior: smooth;
+        scroll-padding-top: 0px;
+      }
+      body{
+        background-color: #F5E6D3;
+        padding: 15px 20px 20px 20px;
+        font-family: Robot, Arial;
+      }
+      .container {
+        background-image: linear-gradient(to top right ,#3f2513 50%, rgba(99, 75, 47, 0.5));
+        color: #F5E6D3;
+        height: 1480px;
+        border-radius: 10px;
+        padding: 15px 30px 0px 30px;
+      }
+      .header{
+        display: flex;
+        margin-bottom: 20px;
+        background-color: #F5E6D3;
+        border-radius: 5px;
+        justify-content: space-between;
+        color: #3a2618;
+        align-items: center;
+      }
+      .left-section {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-shrink: 0;
+        margin-left: 6px;
+        align-items: center;
+      }
+      .right-section {
+        display: flex;
+        margin-left: 15px;
+        justify-content: space-around;
+        align-items: center;
+        flex-shrink: 0;
+      }
+      .slow-brew-logo {
+        height: 20px;
+        border-radius: 10px;
+        margin-right: 2px;
+      }
+      .brand-name {
+        font-family: Robot, Arial;
+        font-size: 11px;
+        font-weight: bold;
+      }
+      .navigations {
+        display: flex;
+        justify-content: space-around;
+        margin-right: 1px;
+      }
+
+      .nav {
+        text-decoration: none;
+        color:#3a2618;
+        font-size: 9px;
+        margin-right: 2px;
+        font-weight: 770;
+        transition: 0.5s;
+      }
+
+      .nav:hover {
+        text-decoration: underline;
+        margin-top: -1px;
+        font-size: 11px;
+      }
+      .login-btn,.form-button {
+        border: none;
+        background-image: linear-gradient(to top left,#3f2513 50%, rgba(99, 75, 47, 0.5));
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+        color: #F5E6D3;
+        padding: 4px 8px;
+        font-family: Roboto, Arial;
+        font-weight: bold;
+        font-size: 8px;
+        cursor: pointer;
+        border-radius: 18px;
+        transition: 0.5s;
+      }
+      .form-button {
+        background-image: linear-gradient(to top left,#3f2513 50%, rgba(99, 75, 47, 0.5));
+      }
+      .login-btn:hover {
+        background-image: linear-gradient(to bottom right,#3f2513, rgba(99, 75, 47, 0.5) 70%);
+        box-shadow: -1px -2px 5px rgba(0, 0, 0, 0.5);
+        color: #F5E6D3;
+      }
+      .form-button:hover {
+        background-image: linear-gradient(to bottom right,#3f2513, rgba(99, 75, 47, 0.5) 70%);
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.75);
+        color: #F5E6D3;
+        padding: 6px 18px;
+        border-radius: 35px;
+        font-weight: bold;
+        font-size: 14px;
+      }
+      .hero-section {
+        background-image: url('../Pictures/coffee 18.jpg');
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        height: 200px;
+        object-position: center;
+        text-align: center;
+        border-radius: 5px;
+        padding: 1px 12px 25px 15px;
+      }
+      .hero {
+        margin-top: 25px;
+        font-size: 20px;
+      }
+
+      .brand-description {
+        font-size: 11px;
+      }
+
+      #Products {
+        font-size: 20px;
+      }
+
+      .product-category {
+        font-size: 15px;
+      }
+      .product-highlight {
+        display: flex;
+        justify-content: space-between;
+        box-shadow: -2px -2px 5px rgba(0, 0, 0, 0.5);
+        background-image: linear-gradient(to bottom right,#3f2513, rgba(99, 75, 47, 0.5) 80%);
+        border-radius: 5px;
+        column-gap: 5px;
+        height: 240px;
+        padding: 10px 15px 15px 15px;
+        margin-bottom: 30px;
+      }
+      .product-container {
+        display: flex;
+        flex: 1;
+        width: 60px;
+        flex-direction: column;
+        border-radius: 5px;
+        background-color: #3a2618;
+        box-shadow: 0px 0px 10px rgb(0, 0, 0, 0.4);
+      }
+      .drink-image {
+        border-top-right-radius: 5px;
+        width: 100%;
+        height: 120px;
+        border-top-left-radius: 5px;
+        margin-bottom: 5px;
+      }
+      .drink-name {
+        font-size: 9px;
+        font-weight: bold;
+        color: #f3b25d;
+        margin-left: 7px;
+        margin-top: 0px;
+        margin-bottom: 3px;
+        margin-right: 10px;
+      }
+      .description {
+        margin-top: 0px;
+        color: rgb(245, 230, 211);
+        font-size: 8px;
+        width: 50px;
+        margin-left: 7px;
+        vertical-align: top;
+        margin-top: 0px;
+      }
+      .feedbacks-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        box-shadow: -2px -2px 5px rgba(0, 0, 0, 0.5);
+        background-image: linear-gradient(to bottom right,#3f2513, rgba(99, 75, 47, 0.5) 70%);
+        border-radius: 5px;
+        padding: 8px 8px 8px 8px;
+        margin-bottom: 50px;
+      }
+
+      .customer-profile {
+        display: flex;
+        justify-content: space-around;
+        align-items: start;
+        margin-left: 0px;
+        margin-right: 0px;
+      }
+      .feedback-left-section {
+        display: flex;
+        justify-content: space-around;
+        align-items: start;
+      }
+      .feedback-right-section {
+        padding-top: 10px;
+      }
+      .profile-pics-container, .info-and-feedback-container {
+        margin-top: 5px;
+      }
+      .profile-pics-container {
+        padding-top: 6px;
+      }
+      .info-and-feedback-container {
+        padding-left: 8px;
+        padding-top: 8px;
+      }
+      .profile-pics {
+        height: 20px;
+        border-radius: 10px;
+      }
+      .customer-name {
+        margin-top: 0px;
+        font-size: 12px;
+        font-weight: bold;
+        margin-bottom: 0px;
+      }
+      .customer-rating {
+        height: 10px;
+        margin-left: 20px;
+        vertical-align: top;
+      }
+      .feedback {
+        margin-top: 0px;
+        font-size: 8px;
+        margin-left: 2px;
+        width: 100px;
+        font-weight: 600;
+      }
+      .footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        box-shadow: -2px -2px 5px rgba(0, 0, 0, 0.5);
+        border-radius: 5px;
+        padding: 15px 0px 0px 10px;
+      }
+      .footer-column {
+        width: 120px;
+      }
+      .contact-column {
+        width: 100px;
+        margin-left: -45px;
+      }
+      .location-column {
+        border-right: solid 1px;
+        margin-right: 0px;
+        padding-right: 8px;
+      }
+      .column-header {
+        margin-top: 0px;
+        font-size: 10px;
+        margin-bottom: 0px;
+      }
+      .work-time,.Address {
+        font-size: 8px;
+      }
+      .contact-icon {
+        height: 10px;
+        margin-top: 10px;
+        border-radius: 5px;
+        margin-right: 6px;
+        background-color: transparent;
+      }
+      .phone-icon, .ingram-icon, .email-icon, .whatsapp-icon {
+        margin-left: 0px;
+      }
+      .whatsapp-contact, .ingram-contact, .email-contact {
+        color: #F5E6D3;
+        display: inline-block;
+        font-weight: bold;
+        font-size: 8px;
+      }
+      .copyright {
+        font-size: 8px;
+        width: 190px;
+        margin-top: 10px;
+      }
+      
+    }

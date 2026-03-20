@@ -1017,15 +1017,14 @@
       }
       body{
         background-color: #F5E6D3;
-        padding: 15px 20px 20px 20px;
+        padding: 3px 20px 20px 20px;
         font-family: Robot, Arial;
       }
       .container {
         background-image: linear-gradient(to top right ,#3f2513 50%, rgba(99, 75, 47, 0.5));
         color: #F5E6D3;
-        height: 1480px;
+        height: 1600px;
         border-radius: 10px;
-        padding: 15px 30px 0px 30px;
       }
       .header{
         display: flex;
@@ -1040,55 +1039,58 @@
         display: flex;
         flex-wrap: nowrap;
         flex-shrink: 0;
-        margin-left: 6px;
+        margin-left: 0px;
         align-items: center;
       }
       .right-section {
         display: flex;
-        margin-left: 15px;
         justify-content: space-around;
         align-items: center;
         flex-shrink: 0;
       }
       .slow-brew-logo {
-        height: 20px;
-        border-radius: 10px;
-        margin-right: 2px;
+        height: 10px;
+        width: 22px;
+        margin-left: -6px;
+        margin-right: -6px;
+        border-radius: 5px;
+        margin-right: 1px;
       }
       .brand-name {
         font-family: Robot, Arial;
-        font-size: 11px;
+        font-size: -7px;
+        margin-left: -2px;
         font-weight: bold;
       }
       .navigations {
         display: flex;
-        justify-content: space-around;
         margin-right: 1px;
+        margin-left: -10px;
       }
 
       .nav {
         text-decoration: none;
         color:#3a2618;
-        font-size: 9px;
-        margin-right: 2px;
-        font-weight: 770;
+        font-size: 2px;
+        margin-right: -5px;
+        font-weight: 670;
         transition: 0.5s;
       }
 
       .nav:hover {
         text-decoration: underline;
         margin-top: -1px;
-        font-size: 11px;
+        font-size: 9px;
       }
       .login-btn,.form-button {
         border: none;
         background-image: linear-gradient(to top left,#3f2513 50%, rgba(99, 75, 47, 0.5));
         box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
         color: #F5E6D3;
-        padding: 4px 8px;
+        padding: 2px 4px;
         font-family: Roboto, Arial;
         font-weight: bold;
-        font-size: 8px;
+        font-size: 2px;
         cursor: pointer;
         border-radius: 18px;
         transition: 0.5s;
@@ -1118,10 +1120,10 @@
         object-position: center;
         text-align: center;
         border-radius: 5px;
-        padding: 1px 12px 25px 15px;
+        padding: -10px 12px 25px 12px;
       }
       .hero {
-        margin-top: 25px;
+        margin-top: 0px;
         font-size: 20px;
       }
 
@@ -1142,24 +1144,27 @@
         box-shadow: -2px -2px 5px rgba(0, 0, 0, 0.5);
         background-image: linear-gradient(to bottom right,#3f2513, rgba(99, 75, 47, 0.5) 80%);
         border-radius: 5px;
-        column-gap: 5px;
+        column-gap: 0px;
         height: 240px;
-        padding: 10px 15px 15px 15px;
+        padding: 15px 15px 15px 15px;
         margin-bottom: 30px;
       }
       .product-container {
         display: flex;
         flex: 1;
-        width: 60px;
+        width: 40px;
+        margin-left: -3px;
         flex-direction: column;
         border-radius: 5px;
         background-color: #3a2618;
         box-shadow: 0px 0px 10px rgb(0, 0, 0, 0.4);
       }
+      .first-container {
+        margin-left: -7px;
+      }
       .drink-image {
         border-top-right-radius: 5px;
-        width: 100%;
-        height: 120px;
+        width: 20px;
         border-top-left-radius: 5px;
         margin-bottom: 5px;
       }
@@ -1167,7 +1172,7 @@
         font-size: 9px;
         font-weight: bold;
         color: #f3b25d;
-        margin-left: 7px;
+        margin-left: 0px;
         margin-top: 0px;
         margin-bottom: 3px;
         margin-right: 10px;
@@ -1176,8 +1181,8 @@
         margin-top: 0px;
         color: rgb(245, 230, 211);
         font-size: 8px;
-        width: 50px;
-        margin-left: 7px;
+        width: 200px;
+        margin-left: -2px;
         vertical-align: top;
         margin-top: 0px;
       }
@@ -1243,18 +1248,18 @@
         grid-template-columns: 1fr 1fr;
         box-shadow: -2px -2px 5px rgba(0, 0, 0, 0.5);
         border-radius: 5px;
-        padding: 15px 0px 0px 10px;
+        padding: 15px 0px 0px 0px;
       }
       .footer-column {
-        width: 120px;
+        width: 100px;
       }
       .contact-column {
         width: 100px;
-        margin-left: -45px;
       }
       .location-column {
         border-right: solid 1px;
         margin-right: 0px;
+        margin-left: -17px;
         padding-right: 8px;
       }
       .column-header {
@@ -1284,7 +1289,8 @@
       .copyright {
         font-size: 8px;
         width: 190px;
-        margin-top: 10px;
+        margin-left: -17px;
+        margin-top: 20px;
       }
       
     }
@@ -1302,7 +1308,7 @@
       .container {
         background-image: linear-gradient(to top right ,#3f2513 50%, rgba(99, 75, 47, 0.5));
         color: #F5E6D3;
-        height: 1650px;
+        height: 1750px;
         border-radius: 10px;
         padding: 15px 30px 0px 30px;
       }

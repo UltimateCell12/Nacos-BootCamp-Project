@@ -1116,8 +1116,11 @@
         background-image: url('../Pictures/coffee 18.jpg');
         background-attachment: fixed;
         background-repeat: no-repeat;
+        display: flex;
+        flex-direction: column;
         height: 300px;
         align-items: center;
+        justify-content: start;
         object-position: center;
         text-align: center;
         border-radius: 5px;
@@ -1126,11 +1129,13 @@
       .hero {
         margin-top: 0px;
         vertical-align: top;
+        margin-bottom: 5px;
         font-size: 20px;
       }
 
       .brand-description {
         font-size: 11px;
+        margin-top: 0px;
       }
 
       #Products {

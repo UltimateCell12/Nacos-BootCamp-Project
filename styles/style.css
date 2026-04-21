@@ -1009,9 +1009,569 @@
       margin-top: -1px;
       font-size: 14px;
     }
-    }
-    @media  (max-width: 375px) {
-      html,body {
+}
+@media  (max-width: 375px) {
+  html,body {
+    scroll-behavior: smooth;
+    scroll-padding-top: 0px;
+  }
+  body{
+    background-color: #F5E6D3;
+    padding: 3px 20px 20px 20px;
+    font-family: Robot, Arial;
+  }
+  .container {
+    background-image: linear-gradient(to top right ,#3f2513 50%, rgba(99, 75, 47, 0.5));
+    color: #F5E6D3;
+    height: 1600px;
+    border-radius: 10px;
+  }
+  .header{
+    display: flex;
+    margin-bottom: 20px;
+    width: 260px;
+    padding-right: 2px;
+    padding-left: 1px;
+    margin-left: -1px;
+    background-color: #F5E6D3;
+    border-radius: 5px;
+    justify-content: space-between;
+    color: #3a2618;
+    align-items: center;
+  }
+  .left-section {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    margin-left: 0px;
+    align-items: center;
+  }
+  .right-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-shrink: 0;
+  }
+  .slow-brew-logo {
+    width: 25px;
+    margin-left: -6.3px;
+    margin-right: -6px;
+    border-radius: 12.5px;
+    margin-right: 1px;
+  }
+  .brand-name {
+    font-family: Robot, Arial;
+    font-size: -7px;
+    margin-left: -2px;
+    font-weight: bold;
+  }
+  .navigations {
+    display: flex;
+    margin-right: 1px;
+    margin-left: -10px;
+  }
+
+  .nav {
+    text-decoration: none;
+    color:#3a2618;
+    font-size: 2px;
+    margin-right: -5px;
+    font-weight: 670;
+    transition: 0.5s;
+  }
+
+  .login-btn,.form-button {
+    border: none;
+    background-image: linear-gradient(to top left,#3f2513 50%, rgba(99, 75, 47, 0.5));
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    color: #F5E6D3;
+    padding: 2px 4px;
+    font-family: Roboto, Arial;
+    font-weight: bold;
+    font-size: 2px;
+    cursor: pointer;
+    border-radius: 18px;
+    transition: 0.5s;
+  }
+  .login-btn:hover {
+    background-image: linear-gradient(to bottom right,#3f2513, rgba(99, 75, 47, 0.5) 70%);
+    box-shadow: -1px -2px 5px rgba(0, 0, 0, 0.5);
+    color: #F5E6D3;
+  }
+  .form-button {
+    background-image: linear-gradient(to top left,#3f2513 50%, rgba(99, 75, 47, 0.5));
+  }
+  .hero-section {
+    background-image: url('../Pictures/coffee 18.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    align-items: center;
+    justify-content: start;
+    object-position: center;
+    text-align: center;
+    border-radius: 5px;
+    padding-top: -18px;
+    padding: -20px 12px 25px 12px;
+  }
+  .hero {
+    margin-top: -10px;
+    vertical-align: top;
+    margin-bottom: 5px;
+    font-size: 20px;
+  }
+
+  .brand-description {
+    font-size: 11px;
+    margin-top: 0px;
+  }
+
+  #Products {
+    font-size: 20px;
+  }
+
+  .product-category {
+    font-size: 15px;
+  }
+  .product-highlight {
+    display: flex;
+    justify-content: space-between;
+    box-shadow: -2px -2px 5px rgba(0, 0, 0, 0.5);
+    background-image: linear-gradient(to bottom right,#3f2513, rgba(99, 75, 47, 0.5) 80%);
+    border-radius: 5px;
+    column-gap: 0px;
+    height: 240px;
+    padding: 15px 15px 15px 15px;
+    margin-bottom: 30px;
+  }
+  .product-container {
+    display: flex;
+    flex: 1;
+    width: 40px;
+    margin-left: -3px;
+    flex-direction: column;
+    border-radius: 5px;
+    background-color: #3a2618;
+    box-shadow: 0px 0px 10px rgb(0, 0, 0, 0.4);
+  }
+  .first-container {
+    margin-left: -7px;
+  }
+  .drink-image {
+    border-top-right-radius: 5px;
+    width: 20px;
+    border-top-left-radius: 5px;
+    margin-bottom: 5px;
+  }
+  .drink-name {
+    font-size: 9px;
+    font-weight: bold;
+    color: #f3b25d;
+    margin-left: 0px;
+    margin-top: 0px;
+    margin-bottom: 3px;
+    margin-right: 10px;
+  }
+  .description {
+    margin-top: 0px;
+    color: rgb(245, 230, 211);
+    font-size: 8px;
+    width: 200px;
+    margin-left: -2px;
+    vertical-align: top;
+    margin-top: 0px;
+  }
+  .feedbacks-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    box-shadow: -2px -2px 5px rgba(0, 0, 0, 0.5);
+    background-image: linear-gradient(to bottom right,#3f2513, rgba(99, 75, 47, 0.5) 70%);
+    border-radius: 5px;
+    padding: 8px 8px 8px 8px;
+    margin-bottom: 50px;
+  }
+
+  .customer-profile {
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .feedback-left-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+  }
+  .feedback-right-section {
+    padding-top: 10px;
+  }
+  .profile-pics-container, .info-and-feedback-container {
+    margin-top: 5px;
+  }
+  .profile-pics-container {
+    padding-top: 6px;
+  }
+  .info-and-feedback-container {
+    padding-left: 8px;
+    padding-top: 8px;
+  }
+  .profile-pics {
+    height: 20px;
+    border-radius: 10px;
+  }
+  .customer-name {
+    margin-top: 0px;
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 0px;
+  }
+  .customer-rating {
+    height: 10px;
+    margin-left: 20px;
+    vertical-align: top;
+  }
+  .feedback {
+    margin-top: 0px;
+    font-size: 8px;
+    margin-left: 2px;
+    width: 100px;
+    font-weight: 600;
+  }
+  .footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    box-shadow: -2px -2px 5px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    padding: 15px 0px 0px 0px;
+  }
+  .footer-column {
+    width: 100px;
+  }
+  .contact-column {
+    width: 100px;
+  }
+  .location-column {
+    border-right: solid 1px;
+    margin-right: 0px;
+    margin-left: -17px;
+    padding-right: 8px;
+  }
+  .column-header {
+    margin-top: 0px;
+    font-size: 10px;
+    margin-bottom: 0px;
+  }
+  .work-time,.Address {
+    font-size: 8px;
+  }
+  .contact-icon {
+    height: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    margin-right: 6px;
+    background-color: transparent;
+  }
+  .phone-icon, .ingram-icon, .email-icon, .whatsapp-icon {
+    margin-left: 0px;
+  }
+  .whatsapp-contact, .ingram-contact, .email-contact {
+    color: #F5E6D3;
+    display: inline-block;
+    font-weight: bold;
+    font-size: 8px;
+  }
+  .copyright {
+    font-size: 8px;
+    width: 190px;
+    margin-left: -17px;
+    margin-top: 20px;
+  }
+  
+}
+
+@media  (max-width: 414px) {
+  html,body {
+    scroll-behavior: smooth;
+    scroll-padding-top: 0px;
+  }
+  body{
+    background-color: #F5E6D3;
+    padding: 15px 20px 10px 20px;
+    font-family: Robot, Arial;
+  }
+  .container {
+    background-image: linear-gradient(to top right ,#3f2513 50%, rgba(99, 75, 47, 0.5));
+    color: #F5E6D3;
+    height: 1750px;
+    border-radius: 10px;
+    padding: 15px 30px 0px 30px;
+  }
+  .header{
+    display: flex;
+    margin-bottom: 20px;
+    background-color: #F5E6D3;
+    border-radius: 5px;
+    justify-content: space-between;
+    color: #3a2618;
+    align-items: center;
+  }
+  .left-section {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    margin-left: 8px;
+    align-items: center;
+  }
+  .right-section {
+    display: flex;
+    margin-left: 15px;
+    justify-content: space-around;
+    align-items: center;
+    flex-shrink: 0;
+  }
+  .slow-brew-logo {
+    height: 25px;
+    border-radius: 12.5px;
+    margin-right: 2px;
+  }
+  .brand-name {
+    font-family: Robot, Arial;
+    font-size: 12px;
+    font-weight: bold;
+  }
+  .navigations {
+    display: flex;
+    justify-content: space-around;
+    margin-right: 1px;
+  }
+
+  .nav {
+    text-decoration: none;
+    color:#3a2618;
+    font-size: 10px;
+    margin-right: 2px;
+    font-weight: 770;
+    transition: 0.5s;
+  }
+
+  .nav:hover {
+    text-decoration: underline;
+    margin-top: -1px;
+    font-size: 12px;
+  }
+  .login-btn,.form-button {
+    border: none;
+    background-image: linear-gradient(to top left,#3f2513 50%, rgba(99, 75, 47, 0.5));
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    color: #F5E6D3;
+    padding: 4px 8px;
+    font-family: Roboto, Arial;
+    font-weight: bold;
+    font-size: 8px;
+    cursor: pointer;
+    border-radius: 18px;
+    transition: 0.5s;
+  }
+  .form-button {
+    background-image: linear-gradient(to top left,#3f2513 50%, rgba(99, 75, 47, 0.5));
+  }
+  .login-btn:hover {
+    background-image: linear-gradient(to bottom right,#3f2513, rgba(99, 75, 47, 0.5) 70%);
+    box-shadow: -1px -2px 5px rgba(0, 0, 0, 0.5);
+    color: #F5E6D3;
+  }
+  .form-button:hover {
+    background-image: linear-gradient(to bottom right,#3f2513, rgba(99, 75, 47, 0.5) 70%);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.75);
+    color: #F5E6D3;
+    padding: 6px 18px;
+    border-radius: 35px;
+    font-weight: bold;
+    font-size: 14px;
+  }
+  .hero-section {
+    background-image: url('../Pictures/coffee 18.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    height: 200px;
+    object-position: center;
+    text-align: center;
+    border-radius: 5px;
+    padding: 1px 12px 25px 15px;
+  }
+  .hero {
+    margin-top: 35px;
+    font-size: 20px;
+  }
+
+  .brand-description {
+    font-size: 11px;
+  }
+
+  #Products {
+    font-size: 20px;
+  }
+
+  .product-category {
+    font-size: 15px;
+  }
+  .product-highlight {
+    display: flex;
+    justify-content: space-between;
+    box-shadow: -2px -2px 5px rgba(0, 0, 0, 0.5);
+    background-image: linear-gradient(to bottom right,#3f2513, rgba(99, 75, 47, 0.5) 80%);
+    border-radius: 5px;
+    column-gap: 6px;
+    height: 240px;
+    padding: 10px 15px 15px 15px;
+    margin-bottom: 30px;
+  }
+  .product-container {
+    display: flex;
+    flex: 1;
+    width: 100px;
+    flex-direction: column;
+    border-radius: 5px;
+    background-color: #3a2618;
+    box-shadow: 0px 0px 10px rgb(0, 0, 0, 0.4);
+  }
+  .drink-image {
+    border-top-right-radius: 5px;
+    width: 100%;
+    height: 120px;
+    border-top-left-radius: 5px;
+    margin-bottom: 5px;
+  }
+  .drink-name {
+    font-size: 10px;
+    font-weight: bold;
+    color: #f3b25d;
+    margin-left: 7px;
+    margin-top: 0px;
+    margin-bottom: 4px;
+    margin-right: 10px;
+  }
+  .description {
+    margin-top: 0px;
+    color: rgb(245, 230, 211);
+    font-size: 9px;
+    width: 70px;
+    margin-left: 9px;
+    vertical-align: top;
+    margin-top: 0px;
+  }
+  .feedbacks-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    box-shadow: -2px -2px 5px rgba(0, 0, 0, 0.5);
+    background-image: linear-gradient(to bottom right,#3f2513, rgba(99, 75, 47, 0.5) 70%);
+    border-radius: 5px;
+    padding: 8px 8px 8px 8px;
+    margin-bottom: 50px;
+  }
+
+  .customer-profile {
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+    margin-left: -7px;
+    margin-right: 0px;
+  }
+  .feedback-left-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+  }
+  .feedback-right-section {
+    padding-top: 10px;
+  }
+  .profile-pics-container, .info-and-feedback-container {
+    margin-top: 5px;
+  }
+  .profile-pics-container {
+    padding-top: 6px;
+  }
+  .info-and-feedback-container {
+    padding-left: 8px;
+    padding-top: 8px;
+  }
+  .profile-pics {
+    height: 20px;
+    border-radius: 10px;
+  }
+  .customer-name {
+    margin-top: 0px;
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 0px;
+  }
+  .customer-rating {
+    height: 10px;
+    margin-left: 20px;
+    vertical-align: top;
+  }
+  .feedback {
+    margin-top: 0px;
+    font-size: 8px;
+    margin-left: 2px;
+    width: 100px;
+    font-weight: 600;
+  }
+  .footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    box-shadow: -2px -2px 5px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    padding: 15px 0px 0px 30px;
+  }
+  .footer-column {
+    width: 120px;
+  }
+  .contact-column {
+    width: 100px;
+    margin-left: -45px;
+  }
+  .location-column {
+    border-right: solid 1px;
+    margin-right: 0px;
+    padding-right: 8px;
+  }
+  .column-header {
+    margin-top: 0px;
+    font-size: 10px;
+    margin-bottom: 0px;
+  }
+  .work-time,.Address {
+    font-size: 8px;
+  }
+  .contact-icon {
+    height: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    margin-right: 6px;
+    background-color: transparent;
+  }
+  .phone-icon, .ingram-icon, .email-icon, .whatsapp-icon {
+    margin-left: 0px;
+  }
+  .whatsapp-contact, .ingram-contact, .email-contact {
+    color: #F5E6D3;
+    display: inline-block;
+    font-weight: bold;
+    font-size: 8px;
+  }
+  .copyright {
+    font-size: 8px;
+    width: 190px;
+    margin-top: 10px;
+  }  
+}
+
+@media (max-width: 360px) {
+  html,body {
         scroll-behavior: smooth;
         scroll-padding-top: 0px;
       }
@@ -1029,38 +1589,40 @@
       .header{
         display: flex;
         margin-bottom: 20px;
+        margin-left: -6px;
+        width: 260px;
+        padding: 0px;
         background-color: #F5E6D3;
         border-radius: 5px;
-        justify-content: space-between;
         color: #3a2618;
         align-items: center;
       }
       .left-section {
         display: flex;
-        flex-wrap: nowrap;
-        flex-shrink: 0;
-        margin-left: 0px;
+        margin-right: -8px;
+        margin-left: 2px;
         align-items: center;
       }
       .right-section {
         display: flex;
+        margin: 0px;
+        margin-left: -2px;
+        margin-right: 2px;
         justify-content: space-around;
         align-items: center;
-        flex-shrink: 0;
       }
       .slow-brew-logo {
         height: 10px;
-        width: 22px;
-        margin-left: -6.3px;
+        margin-left: px;
         margin-right: -6px;
         border-radius: 5px;
         margin-right: 1px;
       }
       .brand-name {
         font-family: Robot, Arial;
-        font-size: -7px;
+        font-size: 5px;
         margin-left: -2px;
-        font-weight: bold;
+        font-weight: 500;
       }
       .navigations {
         display: flex;
@@ -1071,13 +1633,24 @@
       .nav {
         text-decoration: none;
         color:#3a2618;
-        font-size: 2px;
-        margin-right: -5px;
-        font-weight: 670;
+        font-size: 5px;
+        margin-right: 0px;
+        font-weight: 500;
         transition: 0.5s;
       }
-
-      .login-btn,.form-button {
+      .login-btn {
+        border: none;
+        background-image: linear-gradient(to top left,#3f2513 50%, rgba(99, 75, 47, 0.5));
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+        color: #F5E6D3;
+        padding: 2px 4px;
+        font-family: Roboto, Arial;
+        font-size: 2px;
+        cursor: pointer;
+        border-radius: 1px;
+        transition: 0.5s;
+      }
+      .form-button {
         border: none;
         background-image: linear-gradient(to top left,#3f2513 50%, rgba(99, 75, 47, 0.5));
         box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
@@ -1111,7 +1684,7 @@
         text-align: center;
         border-radius: 5px;
         padding-top: -18px;
-        padding: -20px 12px 25px 12px;
+        padding: 20px 40px 25px 40px;
       }
       .hero {
         margin-top: -10px;
@@ -1135,11 +1708,12 @@
       .product-highlight {
         display: flex;
         justify-content: space-between;
+        width: 230px;
+        margin-left: -6px;
         box-shadow: -2px -2px 5px rgba(0, 0, 0, 0.5);
         background-image: linear-gradient(to bottom right,#3f2513, rgba(99, 75, 47, 0.5) 80%);
         border-radius: 5px;
-        column-gap: 0px;
-        height: 240px;
+        height: 200px;
         padding: 15px 15px 15px 15px;
         margin-bottom: 30px;
       }
@@ -1175,7 +1749,7 @@
         margin-top: 0px;
         color: rgb(245, 230, 211);
         font-size: 8px;
-        width: 200px;
+        width: 150px;
         margin-left: -2px;
         vertical-align: top;
         margin-top: 0px;
@@ -1183,6 +1757,8 @@
       .feedbacks-container {
         display: grid;
         grid-template-columns: 1fr;
+        width: 245px;
+        margin-left: -6px;
         box-shadow: -2px -2px 5px rgba(0, 0, 0, 0.5);
         background-image: linear-gradient(to bottom right,#3f2513, rgba(99, 75, 47, 0.5) 70%);
         border-radius: 5px;
@@ -1240,6 +1816,8 @@
       .footer {
         display: grid;
         grid-template-columns: 1fr 1fr;
+        width: 230px;
+        margin-left: -6px;
         box-shadow: -2px -2px 5px rgba(0, 0, 0, 0.5);
         border-radius: 5px;
         padding: 15px 0px 0px 0px;
@@ -1285,285 +1863,860 @@
         width: 190px;
         margin-left: -17px;
         margin-top: 20px;
-      }
-      
-    }
+      }  
+}
 
-    @media  (max-width: 414px) {
-      html,body {
-        scroll-behavior: smooth;
-        scroll-padding-top: 0px;
-      }
-      body{
-        background-color: #F5E6D3;
-        padding: 15px 20px 10px 20px;
-        font-family: Robot, Arial;
-      }
-      .container {
-        background-image: linear-gradient(to top right ,#3f2513 50%, rgba(99, 75, 47, 0.5));
-        color: #F5E6D3;
-        height: 1750px;
-        border-radius: 10px;
-        padding: 15px 30px 0px 30px;
-      }
-      .header{
-        display: flex;
-        margin-bottom: 20px;
-        background-color: #F5E6D3;
-        border-radius: 5px;
-        justify-content: space-between;
-        color: #3a2618;
-        align-items: center;
-      }
-      .left-section {
-        display: flex;
-        flex-wrap: nowrap;
-        flex-shrink: 0;
-        margin-left: 8px;
-        align-items: center;
-      }
-      .right-section {
-        display: flex;
-        margin-left: 15px;
-        justify-content: space-around;
-        align-items: center;
-        flex-shrink: 0;
-      }
-      .slow-brew-logo {
-        height: 25px;
-        border-radius: 12.5px;
-        margin-right: 2px;
-      }
-      .brand-name {
-        font-family: Robot, Arial;
-        font-size: 12px;
-        font-weight: bold;
-      }
-      .navigations {
-        display: flex;
-        justify-content: space-around;
-        margin-right: 1px;
-      }
 
-      .nav {
-        text-decoration: none;
-        color:#3a2618;
-        font-size: 10px;
-        margin-right: 2px;
-        font-weight: 770;
-        transition: 0.5s;
-      }
 
-      .nav:hover {
-        text-decoration: underline;
-        margin-top: -1px;
-        font-size: 12px;
-      }
-      .login-btn,.form-button {
-        border: none;
-        background-image: linear-gradient(to top left,#3f2513 50%, rgba(99, 75, 47, 0.5));
-        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
-        color: #F5E6D3;
-        padding: 4px 8px;
-        font-family: Roboto, Arial;
-        font-weight: bold;
-        font-size: 8px;
-        cursor: pointer;
-        border-radius: 18px;
-        transition: 0.5s;
-      }
-      .form-button {
-        background-image: linear-gradient(to top left,#3f2513 50%, rgba(99, 75, 47, 0.5));
-      }
-      .login-btn:hover {
-        background-image: linear-gradient(to bottom right,#3f2513, rgba(99, 75, 47, 0.5) 70%);
-        box-shadow: -1px -2px 5px rgba(0, 0, 0, 0.5);
-        color: #F5E6D3;
-      }
-      .form-button:hover {
-        background-image: linear-gradient(to bottom right,#3f2513, rgba(99, 75, 47, 0.5) 70%);
-        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.75);
-        color: #F5E6D3;
-        padding: 6px 18px;
-        border-radius: 35px;
-        font-weight: bold;
-        font-size: 14px;
-      }
-      .hero-section {
-        background-image: url('../Pictures/coffee 18.jpg');
-        background-attachment: fixed;
-        background-repeat: no-repeat;
-        height: 200px;
-        object-position: center;
-        text-align: center;
-        border-radius: 5px;
-        padding: 1px 12px 25px 15px;
-      }
-      .hero {
-        margin-top: 35px;
-        font-size: 20px;
-      }
+@media  (max-width: 390px) {
+  html,body {
+    scroll-behavior: smooth;
+    scroll-padding-top: 0px;
+  }
+  body{
+    background-color: #F5E6D3;
+    padding: 15px 20px 10px 20px;
+    font-family: Robot, Arial;
+  }
+  .container {
+    background-image: linear-gradient(to top right ,#3f2513 50%, rgba(99, 75, 47, 0.5));
+    color: #F5E6D3;
+    height: 1650px;
+    border-radius: 10px;
+    padding: 15px 30px 0px 30px;
+  }
+  .header{
+    display: flex;
+    width: 280px;
+    margin-bottom: 20px;
+    margin-left: -2.5px;
+    padding-right: 4px;
+    background-color: #F5E6D3;
+    border-radius: 5px;
+    justify-content: space-between;
+    color: #3a2618;
+    align-items: center;
+  }
+  .left-section {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    align-items: center;
+  }
+  .right-section {
+    display: flex;
+    margin-left: 10px;
+    justify-content: space-around;
+    align-items: center;
+    flex-shrink: 0;
+  }
+  .slow-brew-logo {
+    height: 25px;
+    border-radius: 12.5px;
+    margin-right: 2px;
+  }
+  .brand-name {
+    font-family: Robot, Arial;
+    font-size: 12px;
+    font-weight: bold;
+  }
+  .navigations {
+    display: flex;
+    justify-content: space-around;
+    margin-right: 1px;
+  }
 
-      .brand-description {
-        font-size: 11px;
-      }
+  .nav {
+    text-decoration: none;
+    color:#3a2618;
+    font-size: 10px;
+    margin-right: 2px;
+    font-weight: 770;
+    transition: 0.5s;
+  }
 
-      #Products {
-        font-size: 20px;
-      }
+  .nav:hover {
+    text-decoration: underline;
+    margin-top: -1px;
+    font-size: 12px;
+  }
+  .login-btn,.form-button {
+    border: none;
+    background-image: linear-gradient(to top left,#3f2513 50%, rgba(99, 75, 47, 0.5));
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    color: #F5E6D3;
+    padding: 4px 8px;
+    font-family: Roboto, Arial;
+    font-weight: bold;
+    font-size: 8px;
+    cursor: pointer;
+    border-radius: 18px;
+    transition: 0.5s;
+  }
+  .form-button {
+    background-image: linear-gradient(to top left,#3f2513 50%, rgba(99, 75, 47, 0.5));
+  }
+  .login-btn:hover {
+    background-image: linear-gradient(to bottom right,#3f2513, rgba(99, 75, 47, 0.5) 70%);
+    box-shadow: -1px -2px 5px rgba(0, 0, 0, 0.5);
+    color: #F5E6D3;
+  }
+  .form-button:hover {
+    background-image: linear-gradient(to bottom right,#3f2513, rgba(99, 75, 47, 0.5) 70%);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.75);
+    color: #F5E6D3;
+    padding: 6px 18px;
+    border-radius: 35px;
+    font-weight: bold;
+    font-size: 14px;
+  }
+  .hero-section {
+    background-image: url('../Pictures/coffee 18.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    height: 200px;
+    object-position: center;
+    text-align: center;
+    border-radius: 5px;
+    padding: 1px 12px 25px 15px;
+  }
+  .hero {
+    margin-top: 35px;
+    font-size: 20px;
+  }
 
-      .product-category {
-        font-size: 15px;
-      }
-      .product-highlight {
-        display: flex;
-        justify-content: space-between;
-        box-shadow: -2px -2px 5px rgba(0, 0, 0, 0.5);
-        background-image: linear-gradient(to bottom right,#3f2513, rgba(99, 75, 47, 0.5) 80%);
-        border-radius: 5px;
-        column-gap: 6px;
-        height: 240px;
-        padding: 10px 15px 15px 15px;
-        margin-bottom: 30px;
-      }
-      .product-container {
-        display: flex;
-        flex: 1;
-        width: 100px;
-        flex-direction: column;
-        border-radius: 5px;
-        background-color: #3a2618;
-        box-shadow: 0px 0px 10px rgb(0, 0, 0, 0.4);
-      }
-      .drink-image {
-        border-top-right-radius: 5px;
-        width: 100%;
-        height: 120px;
-        border-top-left-radius: 5px;
-        margin-bottom: 5px;
-      }
-      .drink-name {
-        font-size: 10px;
-        font-weight: bold;
-        color: #f3b25d;
-        margin-left: 7px;
-        margin-top: 0px;
-        margin-bottom: 4px;
-        margin-right: 10px;
-      }
-      .description {
-        margin-top: 0px;
-        color: rgb(245, 230, 211);
-        font-size: 9px;
-        width: 70px;
-        margin-left: 9px;
-        vertical-align: top;
-        margin-top: 0px;
-      }
-      .feedbacks-container {
-        display: grid;
-        grid-template-columns: 1fr;
-        box-shadow: -2px -2px 5px rgba(0, 0, 0, 0.5);
-        background-image: linear-gradient(to bottom right,#3f2513, rgba(99, 75, 47, 0.5) 70%);
-        border-radius: 5px;
-        padding: 8px 8px 8px 8px;
-        margin-bottom: 50px;
-      }
+  .brand-description {
+    font-size: 11px;
+  }
 
-      .customer-profile {
-        display: flex;
-        justify-content: space-around;
-        align-items: start;
-        margin-left: -7px;
-        margin-right: 0px;
-      }
-      .feedback-left-section {
-        display: flex;
-        justify-content: space-around;
-        align-items: start;
-      }
-      .feedback-right-section {
-        padding-top: 10px;
-      }
-      .profile-pics-container, .info-and-feedback-container {
-        margin-top: 5px;
-      }
-      .profile-pics-container {
-        padding-top: 6px;
-      }
-      .info-and-feedback-container {
-        padding-left: 8px;
-        padding-top: 8px;
-      }
-      .profile-pics {
-        height: 20px;
-        border-radius: 10px;
-      }
-      .customer-name {
-        margin-top: 0px;
-        font-size: 12px;
-        font-weight: bold;
-        margin-bottom: 0px;
-      }
-      .customer-rating {
-        height: 10px;
-        margin-left: 20px;
-        vertical-align: top;
-      }
-      .feedback {
-        margin-top: 0px;
-        font-size: 8px;
-        margin-left: 2px;
-        width: 100px;
-        font-weight: 600;
-      }
-      .footer {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        box-shadow: -2px -2px 5px rgba(0, 0, 0, 0.5);
-        border-radius: 5px;
-        padding: 15px 0px 0px 30px;
-      }
-      .footer-column {
-        width: 120px;
-      }
-      .contact-column {
-        width: 100px;
-        margin-left: -45px;
-      }
-      .location-column {
-        border-right: solid 1px;
-        margin-right: 0px;
-        padding-right: 8px;
-      }
-      .column-header {
-        margin-top: 0px;
-        font-size: 10px;
-        margin-bottom: 0px;
-      }
-      .work-time,.Address {
-        font-size: 8px;
-      }
-      .contact-icon {
-        height: 10px;
-        margin-top: 10px;
-        border-radius: 5px;
-        margin-right: 6px;
-        background-color: transparent;
-      }
-      .phone-icon, .ingram-icon, .email-icon, .whatsapp-icon {
-        margin-left: 0px;
-      }
-      .whatsapp-contact, .ingram-contact, .email-contact {
-        color: #F5E6D3;
-        display: inline-block;
-        font-weight: bold;
-        font-size: 8px;
-      }
-      .copyright {
-        font-size: 8px;
-        width: 190px;
-        margin-top: 10px;
-      }
-      
-    }
+  #Products {
+    font-size: 20px;
+  }
+
+  .product-category {
+    font-size: 15px;
+  }
+  .product-highlight {
+    display: flex;
+    justify-content: space-between;
+    box-shadow: -2px -2px 5px rgba(0, 0, 0, 0.5);
+    background-image: linear-gradient(to bottom right,#3f2513, rgba(99, 75, 47, 0.5) 80%);
+    border-radius: 5px;
+    column-gap: 6px;
+    height: 240px;
+    padding: 10px 15px 15px 15px;
+    margin-bottom: 30px;
+  }
+  .product-container {
+    display: flex;
+    flex: 1;
+    width: 100px;
+    flex-direction: column;
+    border-radius: 5px;
+    background-color: #3a2618;
+    box-shadow: 0px 0px 10px rgb(0, 0, 0, 0.4);
+  }
+  .drink-image {
+    border-top-right-radius: 5px;
+    width: 100%;
+    height: 120px;
+    border-top-left-radius: 5px;
+    margin-bottom: 5px;
+  }
+  .drink-name {
+    font-size: 10px;
+    font-weight: bold;
+    color: #f3b25d;
+    margin-left: 7px;
+    margin-top: 0px;
+    margin-bottom: 4px;
+    margin-right: 10px;
+  }
+  .description {
+    margin-top: 0px;
+    color: rgb(245, 230, 211);
+    font-size: 9px;
+    width: 70px;
+    margin-left: 9px;
+    vertical-align: top;
+    margin-top: 0px;
+  }
+  .feedbacks-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    box-shadow: -2px -2px 5px rgba(0, 0, 0, 0.5);
+    background-image: linear-gradient(to bottom right,#3f2513, rgba(99, 75, 47, 0.5) 70%);
+    border-radius: 5px;
+    padding: 8px 8px 8px 8px;
+    margin-bottom: 50px;
+  }
+
+  .customer-profile {
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+    margin-left: -7px;
+    margin-right: 0px;
+  }
+  .feedback-left-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+  }
+  .feedback-right-section {
+    padding-top: 10px;
+  }
+  .profile-pics-container, .info-and-feedback-container {
+    margin-top: 5px;
+  }
+  .profile-pics-container {
+    padding-top: 6px;
+  }
+  .info-and-feedback-container {
+    padding-left: 8px;
+    padding-top: 8px;
+  }
+  .profile-pics {
+    height: 20px;
+    border-radius: 10px;
+  }
+  .customer-name {
+    margin-top: 0px;
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 0px;
+  }
+  .customer-rating {
+    height: 10px;
+    margin-left: 20px;
+    vertical-align: top;
+  }
+  .feedback {
+    margin-top: 0px;
+    font-size: 8px;
+    margin-left: 2px;
+    width: 100px;
+    font-weight: 600;
+  }
+  .footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    box-shadow: -2px -2px 5px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    padding: 15px 15px 0px 15px;
+  }
+  .footer-column {
+    width: 120px;
+  }
+  .contact-column {
+    width: 100px;
+    margin-left: -45px;
+  }
+  .location-column {
+    border-right: solid 1px;
+    margin-right: 0px;
+    margin-left: -8px;
+    padding-right: 8px;
+  }
+  .column-header {
+    margin-top: 0px;
+    font-size: 10px;
+    margin-bottom: 0px;
+  }
+  .work-time,.Address {
+    font-size: 8px;
+  }
+  .contact-icon {
+    height: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    margin-right: 6px;
+    background-color: transparent;
+  }
+  .phone-icon, .ingram-icon, .email-icon, .whatsapp-icon {
+    margin-left: 0px;
+  }
+  .whatsapp-contact, .ingram-contact, .email-contact {
+    color: #F5E6D3;
+    display: inline-block;
+    font-weight: bold;
+    font-size: 8px;
+  }
+  .copyright {
+    font-size: 8px;
+    width: 190px;
+    margin-top: 10px;
+  }  
+}
+
+
+@media  (max-width: 430px) {
+  html,body {
+    scroll-behavior: smooth;
+    scroll-padding-top: 0px;
+  }
+  body{
+    background-color: #F5E6D3;
+    padding: 15px 20px 10px 20px;
+    font-family: Robot, Arial;
+  }
+  .container {
+    background-image: linear-gradient(to top right ,#3f2513 50%, rgba(99, 75, 47, 0.5));
+    color: #F5E6D3;
+    height: 1750px;
+    border-radius: 10px;
+    padding: 15px 30px 0px 30px;
+  }
+  .header{
+    display: flex;
+    margin-bottom: 20px;
+    background-color: #F5E6D3;
+    border-radius: 5px;
+    justify-content: space-between;
+    color: #3a2618;
+    align-items: center;
+  }
+  .left-section {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    margin-left: 8px;
+    align-items: center;
+  }
+  .right-section {
+    display: flex;
+    margin-left: 15px;
+    justify-content: space-around;
+    align-items: center;
+    flex-shrink: 0;
+  }
+  .slow-brew-logo {
+    height: 25px;
+    border-radius: 12.5px;
+    margin-right: 2px;
+  }
+  .brand-name {
+    font-family: Robot, Arial;
+    font-size: 12px;
+    font-weight: bold;
+  }
+  .navigations {
+    display: flex;
+    justify-content: space-around;
+    margin-right: 1px;
+  }
+
+  .nav {
+    text-decoration: none;
+    color:#3a2618;
+    font-size: 10px;
+    margin-right: 2px;
+    font-weight: 770;
+    transition: 0.5s;
+  }
+
+  .nav:hover {
+    text-decoration: underline;
+    margin-top: -1px;
+    font-size: 12px;
+  }
+  .login-btn,.form-button {
+    border: none;
+    background-image: linear-gradient(to top left,#3f2513 50%, rgba(99, 75, 47, 0.5));
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    color: #F5E6D3;
+    padding: 4px 8px;
+    font-family: Roboto, Arial;
+    font-weight: bold;
+    font-size: 8px;
+    cursor: pointer;
+    border-radius: 18px;
+    transition: 0.5s;
+  }
+  .form-button {
+    background-image: linear-gradient(to top left,#3f2513 50%, rgba(99, 75, 47, 0.5));
+  }
+  .login-btn:hover {
+    background-image: linear-gradient(to bottom right,#3f2513, rgba(99, 75, 47, 0.5) 70%);
+    box-shadow: -1px -2px 5px rgba(0, 0, 0, 0.5);
+    color: #F5E6D3;
+  }
+  .form-button:hover {
+    background-image: linear-gradient(to bottom right,#3f2513, rgba(99, 75, 47, 0.5) 70%);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.75);
+    color: #F5E6D3;
+    padding: 6px 18px;
+    border-radius: 35px;
+    font-weight: bold;
+    font-size: 14px;
+  }
+  .hero-section {
+    background-image: url('../Pictures/coffee 18.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    height: 200px;
+    object-position: center;
+    text-align: center;
+    border-radius: 5px;
+    padding: 1px 12px 25px 15px;
+  }
+  .hero {
+    margin-top: 35px;
+    font-size: 20px;
+  }
+
+  .brand-description {
+    font-size: 11px;
+  }
+
+  #Products {
+    font-size: 20px;
+  }
+
+  .product-category {
+    font-size: 15px;
+  }
+  .product-highlight {
+    display: flex;
+    justify-content: space-between;
+    box-shadow: -2px -2px 5px rgba(0, 0, 0, 0.5);
+    background-image: linear-gradient(to bottom right,#3f2513, rgba(99, 75, 47, 0.5) 80%);
+    border-radius: 5px;
+    column-gap: 6px;
+    height: 240px;
+    padding: 10px 15px 15px 15px;
+    margin-bottom: 30px;
+  }
+  .product-container {
+    display: flex;
+    flex: 1;
+    width: 100px;
+    flex-direction: column;
+    border-radius: 5px;
+    background-color: #3a2618;
+    box-shadow: 0px 0px 10px rgb(0, 0, 0, 0.4);
+  }
+  .drink-image {
+    border-top-right-radius: 5px;
+    width: 100%;
+    height: 120px;
+    border-top-left-radius: 5px;
+    margin-bottom: 5px;
+  }
+  .drink-name {
+    font-size: 10px;
+    font-weight: bold;
+    color: #f3b25d;
+    margin-left: 7px;
+    margin-top: 0px;
+    margin-bottom: 4px;
+    margin-right: 10px;
+  }
+  .description {
+    margin-top: 0px;
+    color: rgb(245, 230, 211);
+    font-size: 9px;
+    width: 70px;
+    margin-left: 9px;
+    vertical-align: top;
+    margin-top: 0px;
+  }
+  .feedbacks-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    box-shadow: -2px -2px 5px rgba(0, 0, 0, 0.5);
+    background-image: linear-gradient(to bottom right,#3f2513, rgba(99, 75, 47, 0.5) 70%);
+    border-radius: 5px;
+    padding: 8px 8px 8px 8px;
+    margin-bottom: 50px;
+  }
+
+  .customer-profile {
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+    margin-left: -7px;
+    margin-right: 0px;
+  }
+  .feedback-left-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+  }
+  .feedback-right-section {
+    padding-top: 10px;
+  }
+  .profile-pics-container, .info-and-feedback-container {
+    margin-top: 5px;
+  }
+  .profile-pics-container {
+    padding-top: 6px;
+  }
+  .info-and-feedback-container {
+    padding-left: 8px;
+    padding-top: 8px;
+  }
+  .profile-pics {
+    height: 20px;
+    border-radius: 10px;
+  }
+  .customer-name {
+    margin-top: 0px;
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 0px;
+  }
+  .customer-rating {
+    height: 10px;
+    margin-left: 20px;
+    vertical-align: top;
+  }
+  .feedback {
+    margin-top: 0px;
+    font-size: 8px;
+    margin-left: 2px;
+    width: 100px;
+    font-weight: 600;
+  }
+  .footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    box-shadow: -2px -2px 5px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    padding: 15px 0px 0px 30px;
+  }
+  .footer-column {
+    width: 120px;
+  }
+  .contact-column {
+    width: 100px;
+    margin-left: -45px;
+  }
+  .location-column {
+    border-right: solid 1px;
+    margin-right: 0px;
+    padding-right: 8px;
+  }
+  .column-header {
+    margin-top: 0px;
+    font-size: 10px;
+    margin-bottom: 0px;
+  }
+  .work-time,.Address {
+    font-size: 8px;
+  }
+  .contact-icon {
+    height: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    margin-right: 6px;
+    background-color: transparent;
+  }
+  .phone-icon, .ingram-icon, .email-icon, .whatsapp-icon {
+    margin-left: 0px;
+  }
+  .whatsapp-contact, .ingram-contact, .email-contact {
+    color: #F5E6D3;
+    display: inline-block;
+    font-weight: bold;
+    font-size: 8px;
+  }
+  .copyright {
+    font-size: 8px;
+    width: 190px;
+    margin-top: 10px;
+  }  
+}
+
+
+@media  (max-width: 320px) {
+  html,body {
+    scroll-behavior: smooth;
+    scroll-padding-top: 0px;
+  }
+  body{
+    background-color: #F5E6D3;
+    padding: 3px 20px 20px 20px;
+    font-family: Robot, Arial;
+  }
+  .container {
+    background-image: linear-gradient(to top right ,#3f2513 50%, rgba(99, 75, 47, 0.5));
+    color: #F5E6D3;
+    height: 1600px;
+    border-radius: 10px;
+  }
+  .header{
+    display: flex;
+    margin-bottom: 20px;
+    width: 240px;
+    padding-right: 2px;
+    margin-left: -19px;
+    background-color: #F5E6D3;
+    border-radius: 5px;
+    justify-content: space-between;
+    color: #3a2618;
+    align-items: center;
+  }
+  .left-section {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    margin-left: 0px;
+    align-items: center;
+  }
+  .right-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-shrink: 0;
+  }
+  .slow-brew-logo {
+    height: 20px;
+    margin-left: 2px;
+    border-radius: 10px;
+    margin-right: 1px;
+  }
+  .brand-name {
+    font-family: Robot, Arial;
+    font-size: 12px;
+    margin-left: 1px;
+    font-weight: bold;
+  }
+  .navigations {
+    display: flex;
+    margin-right: 1px;
+    margin-left: -10px;
+  }
+
+  .nav {
+    text-decoration: none;
+    color:#3a2618;
+    font-size: 9px;
+    margin-right: 0px;
+    font-weight: 670;
+    transition: 0.5s;
+  }
+
+  .login-btn,.form-button {
+    border: none;
+    background-image: linear-gradient(to top left,#3f2513 50%, rgba(99, 75, 47, 0.5));
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    color: #F5E6D3;
+    padding: 4px 8px;
+    font-family: Roboto, Arial;
+    font-weight: bold;
+    font-size: 8px;
+    cursor: pointer;
+    border-radius: 18px;
+    transition: 0.5s;
+  }
+  .login-btn:hover {
+    background-image: linear-gradient(to bottom right,#3f2513, rgba(99, 75, 47, 0.5) 70%);
+    box-shadow: -1px -2px 5px rgba(0, 0, 0, 0.5);
+    color: #F5E6D3;
+  }
+  .form-button {
+    background-image: linear-gradient(to top left,#3f2513 50%, rgba(99, 75, 47, 0.5));
+  }
+  .hero-section {
+    background-image: url('../Pictures/coffee 18.jpg');
+    background-attachment: fixed;
+    width: 210px;
+    margin-left: -16px;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    height: 250px;
+    align-items: center;
+    justify-content: start;
+    object-position: center;
+    text-align: center;
+    border-radius: 5px;
+    padding-top: -18px;
+    padding: -20px 12px 25px 12px;
+  }
+  .hero {
+    margin-top: 25px;
+    vertical-align: top;
+    margin-bottom: 5px;
+    font-size: 20px;
+  }
+
+  .brand-description {
+    font-size: 11px;
+    margin-top: 0px;
+  }
+
+  #Products {
+    font-size: 20px;
+    margin-left: -14px;
+  }
+
+  .product-category {
+    font-size: 15px;
+    margin-left: -14px;
+  }
+  .product-highlight {
+    display: flex;
+    margin-left: -16px;
+    width: 210px;
+    justify-content: space-between;
+    box-shadow: -2px -2px 5px rgba(0, 0, 0, 0.5);
+    background-image: linear-gradient(to bottom right,#3f2513, rgba(99, 75, 47, 0.5) 80%);
+    border-radius: 5px;
+    column-gap: 4px;
+    height: 240px;
+    padding: 15px 15px 15px 15px;
+    margin-bottom: 30px;
+  }
+  .product-container {
+    display: flex;
+    width: 120px;
+    margin-left: 0px;
+    flex-direction: column;
+    border-radius: 5px;
+    background-color: #3a2618;
+    box-shadow: 0px 0px 10px rgb(0, 0, 0, 0.4);
+  }
+  .first-container {
+    margin-left: 0px;
+  }
+  .drink-image {
+    border-top-right-radius: 5px;
+    width: 100%;
+    border-top-left-radius: 5px;
+    margin-bottom: 5px;
+  }
+  .drink-name {
+    font-size: 9px;
+    font-weight: bold;
+    color: #f3b25d;
+    margin-left: 2px;
+    margin-top: 0px;
+    margin-bottom: 3px;
+    margin-right: 10px;
+  }
+  .description {
+    margin-top: 0px;
+    color: rgb(245, 230, 211);
+    font-size: 8px;
+    width: 60px;
+    margin-left: 2px;
+    vertical-align: top;
+    margin-top: 0px;
+  }
+  .feedbacks-container {
+    display: grid;
+    width: 225px;
+    margin-left: -17px;
+    grid-template-columns: 1fr;
+    box-shadow: -2px -2px 5px rgba(0, 0, 0, 0.5);
+    background-image: linear-gradient(to bottom right,#3f2513, rgba(99, 75, 47, 0.5) 70%);
+    border-radius: 5px;
+    padding: 8px 8px 8px 8px;
+    margin-bottom: 50px;
+  }
+
+  .customer-profile {
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .feedback-left-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+  }
+  .feedback-right-section {
+    padding-top: 10px;
+  }
+  .profile-pics-container, .info-and-feedback-container {
+    margin-top: 5px;
+  }
+  .profile-pics-container {
+    padding-top: 6px;
+  }
+  .info-and-feedback-container {
+    padding-left: 8px;
+    padding-top: 8px;
+  }
+  .profile-pics {
+    height: 20px;
+    border-radius: 10px;
+  }
+  .customer-name {
+    margin-top: 0px;
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 0px;
+  }
+  .customer-rating {
+    height: 10px;
+    margin-left: 20px;
+    vertical-align: top;
+  }
+  .feedback {
+    margin-top: 0px;
+    font-size: 8px;
+    margin-left: 2px;
+    width: 100px;
+    font-weight: 600;
+  }
+  .footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 245px;
+    margin-left: -20px;
+    box-shadow: -2px -2px 5px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    padding: 15px 0px 0px 0px;
+  }
+  .footer-column {
+    width: 100px;
+  }
+  .contact-column {
+    width: 100px;
+    margin-left: -69px;
+  }
+  .location-column {
+    border-right: solid 1px;
+    margin-right: 0px;
+    margin-left: 20px;
+    padding-right: 8px;
+  }
+  .column-header {
+    margin-top: 0px;
+    font-size: 10px;
+    margin-bottom: 0px;
+  }
+  .work-time,.Address {
+    font-size: 8px;
+  }
+  .contact-icon {
+    height: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    margin-right: 6px;
+    background-color: transparent;
+  }
+  .phone-icon, .ingram-icon, .email-icon, .whatsapp-icon {
+    margin-left: 0px;
+  }
+  .whatsapp-contact, .ingram-contact, .email-contact {
+    color: #F5E6D3;
+    display: inline-block;
+    font-weight: bold;
+    font-size: 8px;
+  }
+  .copyright {
+    font-size: 8px;
+    width: 190px;
+    margin-left: 20px;
+    margin-top: 20px;
+  }
+  
+}
+
+
